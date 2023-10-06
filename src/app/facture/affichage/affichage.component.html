@@ -1,0 +1,21 @@
+<table class="table table-striped-columns">
+    <thead>
+        <tr>
+        <td>name</td>
+        <td>description</td>
+        <td>qty</td>
+        <td>price</td>
+        <td>delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of items ; let i=index;">
+            <td>{{p.name}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.qty}}</td>
+            <td>{{p.price}}</td>
+            <td><button type="button" class="btn btn-danger" (click)="remove(i)">Delete</button></td>
+            </tr>
+    </tbody>
+
+</table>

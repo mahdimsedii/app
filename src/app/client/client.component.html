@@ -1,0 +1,21 @@
+<p>client de la societe </p>
+<h1>bienvenue </h1>
+<div>{{nom}}</div>
+<h2>code voiture : {{voiture1.code}}</h2>
+<h2>marque voiture : {{voiture1.marque}}</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>code du produit</td>
+            <td>Produit</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pr of tabProduit">
+            <td>{{pr.code}}</td>
+            <td>{{pr.produit}}</td>
+        </tr>
+    </tbody>
+
+</table>
+<button type="button" class="btn btn-success" (click)="modifierimat()">Modifier </button>
